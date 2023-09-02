@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --basic-white: #fff;
+  --basic-black: rgba(0, 0, 0, 0);
+
+  --font-title: #e1e1e6;
+  --font-link: #c4c4cc;
+  --font-paragraph: #e1e1e6;
+  --buttton-hover: #02799d;
+
+  --url-home: url(/assets/mountains-universe-1.png);
+  --url-universe:url(/assets/mountains-universe02.png);
+  --url-exploration:url(/assets/mountains-universe-3.png);
+}
+
+:root,
+body,
+h1,
+p,
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: rgb(11, 11, 11);
+  display: grid;
+  grid-template-rows: 12.2rem calc(100vh - 20.0rem);
+  background-image: var(--url-home);
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 3.2rem;
+
+  padding: 4rem 7.2rem;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--font-link);
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+}
+
+.active {
+  color: var(--basic-white);
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem ;
+  margin: 6.0rem 10.2rem;
+}
+
+.home {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+}
+
+h1 {
+  color: var(--font-title);
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 6rem;
+}
+
+button {
+  display: inline-flex;
+  padding: 1.2rem 3.2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--basic-white);
+  text-transform: uppercase;
+  color: var(--basic-white);
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  background-color: var(--basic-black);
+  width: 20rem;
+  margin-top: 2.4rem;
+}
+
+button:hover {
+  background: var(--basic-white);
+  color: var(--buttton-hover);
+}
+
+p {
+  color: var(--font-paragraph);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.88rem;
+  max-width: 64.8rem;
+}
